@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium TestNG BDD LambdaTest Parallel Run" verbose="1" parallel="tests" thread-count="3">
+
+<!-- 
+   <test name="Chrome vlatest on Win8" annotations="JDK" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browser_version" value="latest"/>
+        <parameter name="platform" value="Windows 8"/>
+        <classes>
+            <class name="runner.TestRunner" />
+        </classes>
+    </test>
+-->
+
+   <test name="Safari v16.0 on MacOS Ventura" annotations="JDK" preserve-order="true">
+        <parameter name="browser" value="safari"/>
+        <parameter name="browser_version" value="16.0"/>
+        <parameter name="platform" value="MacOS Ventura"/>
+        <classes>
+          <class name="runner.TestRunner" />
+        </classes>
+    </test> 
+
+	<test name="Firefox v101.0 on Win10" annotations="JDK" preserve-order="true">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="browser_version" value="101.0" />
+		<parameter name="platform" value="Windows 10" />
+		<classes>
+			<class name="runner.TestRunner" />
+		</classes>
+	</test>
+</suite>
